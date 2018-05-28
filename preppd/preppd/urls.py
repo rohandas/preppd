@@ -17,10 +17,8 @@ from django.conf.urls import url
 from django.contrib import admin
 from django.conf.urls import include
 import app
-print include
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^profile/', include('app.urls')),
-    #url(r'^me/', app.views.view_profile_page),
 ]
