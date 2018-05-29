@@ -20,5 +20,5 @@ import app
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^profile/', include('app.urls')),
+    url(r'', include('app.urls')),
 ]
