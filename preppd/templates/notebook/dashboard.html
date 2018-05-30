@@ -14,8 +14,8 @@
   <link rel="stylesheet" href="{% static 'css/app.css' %}" type="text/css" />
   <!--[if lt IE 9]>
   <script src="{% static 'js/ie/html5shiv.js' %}"></script>
-    <script src="{% static 'js/ie/respond.min.js' %}"></script>
-    <script src="{% static 'js/ie/excanvas.js' %}"></script>
+  <script src="{% static 'js/ie/respond.min.js' %}"></script>
+  <script src="{% static 'js/ie/excanvas.js' %}"></script>
   <![endif]-->
 </head>
 <body class="">
@@ -25,7 +25,7 @@
         <a class="btn btn-link visible-xs" data-toggle="class:nav-off-screen,open" data-target="#nav,html">
           <i class="fa fa-bars"></i>
         </a>
-        <a href="#" class="navbar-brand" data-toggle="fullscreen"><img src="images/logo.png" class="m-r-sm">Notebook</a>
+        <a href="#" class="navbar-brand" data-toggle="fullscreen">Prepp'd</a>
         <a class="btn btn-link visible-xs" data-toggle="dropdown" data-target=".nav-user">
           <i class="fa fa-cog"></i>
         </a>
@@ -160,7 +160,7 @@
                     </li>
                     <li >
                       <a href="#uikit"  >
-                        <i class="fa fa-flask icon">
+                        <i class="fa fa-book icon">
                           <b class="bg-success"></b>
                         </i>
                         <span class="pull-right">
@@ -197,7 +197,7 @@
                           </a>
                         </li>
                         <li >
-                          <a href="components.html" >
+                          <a href="./templates/notebook/math" >
                             <i class="fa fa-angle-right"></i>
                             <span>Mental math</span>
                           </a>
@@ -226,7 +226,7 @@
                     <li >
                       <a href="mail.html"  >
                         <b class="badge bg-danger pull-right">3</b>
-                        <i class="fa fa-envelope-o icon">
+                        <i class="fa fa-user icon">
                           <b class="bg-primary dker"></b>
                         </i>
                         <span>Interview Me</span>
@@ -287,6 +287,13 @@
                     <h4 class="m-t-none font-bold">Your Prepp'd score</h4>
                     <div class="text-center">
                       <div class="inline m">
+                        <div class="easypiechart text-success" data-percent="90" data-line-width="6" data-track-Color="#f0f0f0" data-bar-color="#8ec165" data-rotate="270" data-scale-Color="false" data-size="120" data-animate="2000">
+                          <span class="h2 step font-bold">1</span>%
+                          <div class="easypie-text text-muted">ready for gametime!</div>
+                        </div>
+                        <div class="font-bold m-t">Getting started</div>
+                      </div>
+                      <div class="inline m">
                         <div class="easypiechart text-success" data-percent="67" data-line-width="6" data-track-Color="#f0f0f0" data-bar-color="#8ec165" data-rotate="270" data-scale-Color="false" data-size="120" data-animate="2000">
                           <span class="h2 step font-bold">1</span>%
                           <div class="easypie-text text-muted">ready for gametime!</div>
@@ -299,13 +306,6 @@
                           <div class="easypie-text text-muted">ready for gametime!</div>
                         </div>
                         <div class="font-bold m-t">Cases</div>
-                      </div>
-                      <div class="inline m">
-                        <div class="easypiechart text-success" data-percent="90" data-line-width="6" data-track-Color="#f0f0f0" data-bar-color="#8ec165" data-rotate="270" data-scale-Color="false" data-size="120" data-animate="2000">
-                          <span class="h2 step font-bold">1</span>%
-                          <div class="easypie-text text-muted">ready for gametime!</div>
-                        </div>
-                        <div class="font-bold m-t">Third thing</div>
                       </div>
                     </div>
                   </div>
@@ -368,92 +368,92 @@
               <div class="hbox">
                 <aside>
                   <div class="wrapper-lg">
-                  <div class="tab-content">
-                    <h4 class="font-bold m-t m-b">Your preparation</h4>
-                  <div class="tab-pane active" id="sales">
-                    <div id="flot-1ine" style="height:240px"></div>
+                    <div class="tab-content">
+                      <h4 class="font-bold m-t m-b">Your preparation</h4>
+                      <div class="tab-pane active" id="sales">
+                        <div id="flot-1ine" style="height:240px"></div>
+                      </div>
+                      <div class="tab-pane" id="revenue">
+                        <div id="flot-chart"  style="width:100%;height:240px"></div>
+                      </div>
+                      <div class="tab-pane" id="orders">
+                        <div id="flot-live"  style="width:100%;height:240px"></div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="tab-pane" id="revenue">
-                    <div id="flot-chart"  style="width:100%;height:240px"></div>
+                  <div class="row text-center no-gutter">
+                    <div class="col-xs-3 b-r b-light">
+                      <span class="h4 font-bold m-t block">5,860</span>
+                      <small class="text-muted block">Orders</small>
+                    </div>
+                    <div class="col-xs-3 b-r b-light">
+                      <span class="h4 font-bold m-t block">10,450</span>
+                      <small class="text-muted block">Sellings</small>
+                    </div>
+                    <div class="col-xs-3 b-r b-light">
+                      <span class="h4 font-bold m-t block">21,230</span>
+                      <small class="text-muted block">Items</small>
+                    </div>
+                    <div class="col-xs-3">
+                      <span class="h4 font-bold m-t block">7,230</span>
+                      <small class="text-muted block">Customers</small>
+                    </div>
                   </div>
-                  <div class="tab-pane" id="orders">
-                    <div id="flot-live"  style="width:100%;height:240px"></div>
+                </aside>
+                <aside>
+                  <div class="wrapper-lg">
+                    <h4 class="font-bold m-t m-b">Stats</h4>
+                    <div class="panel panel-default">
+                      <table class="table table-striped m-b-none">
+                        <thead>
+                          <tr>
+                            <th>Graph</th>
+                            <th>Item</th>
+                            <th width="70"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="sparkline" data-bar-color="#5cb85c" data-type="bar" data-height="19"><!--20,10,15,21,12,5,21,30,24,15,8,19--></div>
+                            </td>
+                            <td>App downloads</td>
+                            <td class="text-success">
+                              <i class="fa fa-level-up"></i> 40%
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="sparkline" data-bar-color="#61a1e1" data-type="bar" data-height="19"><!--,5,21,30,24,15,8,19,20,10,15,21,12--></div>
+                            </td>
+                            <td>Social connection</td>
+                            <td class="text-success">
+                              <i class="fa fa-level-up"></i> 20%
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="sparkline" data-bar-color="#999900" data-type="bar" data-height="19"><!--200,400,500,100,90,1200,1500,1000,800,500,80,50--></div>
+                            </td>
+                            <td>Revenue</td>
+                            <td class="text-warning">
+                              <i class="fa fa-level-down"></i> 5%
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="sparkline" data-bar-color="#ff5f5f" data-type="bar" data-height="19"><!--15,21,30,24,15,8,19,20,10,15,21,12--></div>
+                            </td>
+                            <td>Customer increase</td>
+                            <td class="text-danger">
+                              <i class="fa fa-level-down"></i> 20%
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
-                </div>
-              </div>
-                <div class="row text-center no-gutter">
-                  <div class="col-xs-3 b-r b-light">
-                    <span class="h4 font-bold m-t block">5,860</span>
-                    <small class="text-muted block">Orders</small>
-                  </div>
-                  <div class="col-xs-3 b-r b-light">
-                    <span class="h4 font-bold m-t block">10,450</span>
-                    <small class="text-muted block">Sellings</small>
-                  </div>
-                  <div class="col-xs-3 b-r b-light">
-                    <span class="h4 font-bold m-t block">21,230</span>
-                    <small class="text-muted block">Items</small>
-                  </div>
-                  <div class="col-xs-3">
-                    <span class="h4 font-bold m-t block">7,230</span>
-                    <small class="text-muted block">Customers</small>
-                  </div>
-                </div>
-              </aside>
-              <aside>
-                <div class="wrapper-lg">
-                  <h4 class="font-bold m-t m-b">Stats</h4>
-                  <div class="panel panel-default">
-                    <table class="table table-striped m-b-none">
-                      <thead>
-                        <tr>
-                          <th>Graph</th>
-                          <th>Item</th>
-                          <th width="70"></th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>
-                            <div class="sparkline" data-bar-color="#5cb85c" data-type="bar" data-height="19"><!--20,10,15,21,12,5,21,30,24,15,8,19--></div>
-                          </td>
-                          <td>App downloads</td>
-                          <td class="text-success">
-                            <i class="fa fa-level-up"></i> 40%
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <div class="sparkline" data-bar-color="#61a1e1" data-type="bar" data-height="19"><!--,5,21,30,24,15,8,19,20,10,15,21,12--></div>
-                          </td>
-                          <td>Social connection</td>
-                          <td class="text-success">
-                            <i class="fa fa-level-up"></i> 20%
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <div class="sparkline" data-bar-color="#999900" data-type="bar" data-height="19"><!--200,400,500,100,90,1200,1500,1000,800,500,80,50--></div>
-                          </td>
-                          <td>Revenue</td>
-                          <td class="text-warning">
-                            <i class="fa fa-level-down"></i> 5%
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <div class="sparkline" data-bar-color="#ff5f5f" data-type="bar" data-height="19"><!--15,21,30,24,15,8,19,20,10,15,21,12--></div>
-                          </td>
-                          <td>Customer increase</td>
-                          <td class="text-danger">
-                            <i class="fa fa-level-down"></i> 20%
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </aside>
+                </aside>
               </div>
             </section>
           </section>
@@ -471,7 +471,7 @@
   <!-- App -->
   <script src="{% static 'js/app.js' %}"></script>
   <script src="{% static 'js/slimscroll/jquery.slimscroll.min.js' %}"></script>
-    <script src="{% static 'js/charts/easypiechart/jquery.easy-pie-chart.js' %}"></script>
+  <script src="{% static 'js/charts/easypiechart/jquery.easy-pie-chart.js' %}"></script>
   <script src="{% static 'js/charts/sparkline/jquery.sparkline.min.js' %}"></script>
   <script src="{% static 'js/charts/flot/jquery.flot.min.js' %}"></script>
   <script src="{% static 'js/charts/flot/jquery.flot.tooltip.min.js' %}"></script>

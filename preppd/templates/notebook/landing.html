@@ -1,29 +1,30 @@
-<!DOCTYPE html>
+<!DOCTYPE html> {% load static %}
 <html lang="en" class=" ">
 <head>
   <meta charset="utf-8" />
-  <title>Notebook | Web Application</title>
+  <title>Prepp'd | All you need </title>
   <meta name="description" content="app, web app, responsive, admin dashboard, admin, flat, flat ui, ui kit, off screen nav" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
-  <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
-  <link rel="stylesheet" href="css/animate.css" type="text/css" />
-  <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
-  <link rel="stylesheet" href="css/font.css" type="text/css" />
-  <link rel="stylesheet" href="css/landing.css" type="text/css" />
-  <link rel="stylesheet" href="css/app.css" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" type="text/css" />
+  <link rel="stylesheet" href="{% static 'css/animate.css' %}" type="text/css" />
+  <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" type="text/css" />
+  <link rel="stylesheet" href="{% static 'css/font.css' %}" type="text/css" />
+  <link rel="stylesheet" href="{% static 'css/calendar/bootstrap_calendar.css' %}" type="text/css" />
+  <link rel="stylesheet" href="{% static 'js/jvectormap/jquery-jvectormap-1.2.2.css' %}" type="text/css" />
+  <link rel="stylesheet" href="{% static 'css/app.css' %}" type="text/css" />
   <!--[if lt IE 9]>
-    <script src="js/ie/html5shiv.js"></script>
-    <script src="js/ie/respond.min.js"></script>
-    <script src="js/ie/excanvas.js"></script>
+  <script src="{% static 'js/ie/html5shiv.js' %}"></script>
+  <script src="{% static 'js/ie/respond.min.js' %}"></script>
+  <script src="{% static 'js/ie/excanvas.js' %}"></script>
   <![endif]-->
 </head>
 <body class="">
-  	
+
   <!-- header -->
   <header id="header" class="navbar navbar-fixed-top bg-white box-shadow b-b b-light"  data-spy="affix" data-offset-top="1">
     <div class="container">
-      <div class="navbar-header">        
-        <a href="#" class="navbar-brand"><img src="images/logo.png" class="m-r-sm"><span class="text-muted">Notebook</span></a>
+      <div class="navbar-header">
+        <a href="#" class="navbar-brand"><img src="static/images/logo.png" class="m-r-sm"><span class="text-muted">Prepp'd</span></a>
         <button class="btn btn-link visible-xs" type="button" data-toggle="collapse" data-target=".navbar-collapse">
           <i class="fa fa-bars"></i>
         </button>
@@ -50,79 +51,77 @@
     </div>
   </header>
   <!-- / header -->
-	<section id="content">
-	  <div class="bg-primary dk">
+  <section id="content">
+    <div class="bg-primary dk">
       <div class="text-center wrapper">
         <div class="m-t-xl m-b-xl">
           <div class="text-uc h1 font-bold inline">
-            <div class="pull-left m-r-sm text-white">Web Application <span class="font-thin text-muted">Built</span></div>
-            <div class="carousel slide carousel-fade inline auto aside text-left pull-left pull-none-xs" data-interval="2000">
-                <div class="carousel-inner">
-                  <div class="item active text-warning">
-                    Easier
-                  </div>
-                  <div class="item text-dark">
-                    Faster
-                  </div>
-                  <div class="item">
-                    Funny
-                  </div>
+            <div class="pull-left m-r-sm text-white">Consulting Prep <span class="font-thin text-muted">Done</span></div>
+            <div class="carousel slide carousel-fade inline auto aside text-left pull-left pull-none-xs" data-interval="1500">
+              <div class="carousel-inner">
+                <div class="item active text-warning">
+                  Faster
                 </div>
+                <div class="item">
+                  Smarter
+                </div>
+                <div class="item text-dark">
+                  Better
+                </div>
+              </div>
             </div>
           </div>
-          <div class="h4 text-muted m-t-sm">Modern, Clean & Flat User Interface Kit Made with Love & Passion</div>
+          <div class="h4 text-muted m-t-sm">Finally. A platform to give you the <i>distinctive</i> edge you need and want</div>
         </div>
-        <p class="text-center m-b-xl">
-          <a href="http://themeforest.net/user/Flatfull/portfolio?ref=flatfull" target="_blank" class="btn btn-lg btn-dark m-sm">Download it</a>
-          <a href="index.html" target="_blank" class="btn btn-lg btn-warning b-white bg-empty m-sm">Live Preview</a>
+        <p class="text-center m-b-l">
+          <a href="signup.html" target="_blank" class="btn btn-lg btn-dark m-sm">Try it now!</a>
+          <a href="features.html" target="_blank" class="btn btn-lg btn-warning b-white bg-empty m-sm">Read more</a>
         </p>
       </div>
       <div class="padder">
         <div class="hbox">
-          <aside class="col-md-3 v-bottom text-right">
-            <div class="hidden-sm hidden-xs">
-              <section class="panel bg-dark inline m-b-n-lg m-r-n-lg aside-sm no-border device phone animated fadeInLeftBig">
-                <header class="panel-heading text-center">
-                  <i class="fa fa-minus fa-2x m-b-n-xs block"></i>
-                </header>
-                <div>
-                  <div class="m-l-xs m-r-xs">
-                    <img src="images/phone-2.png" class="img-full" >
-                  </div>
-                </div>
-              </section>
-            </div>
+
+          <aside class="col-sm-4 col-md-2">
+            <section class="panel bg-dark m-b-n-lg no-border device animated fadeInLeft">
+              <header class="panel-heading text-left">
+                <i class="fa fa-circle fa-fw"></i>
+                <i class="fa fa-circle fa-fw"></i>
+                <i class="fa fa-circle fa-fw"></i>
+              </header>
+              <img src="static/images/main.png" class="img-full" >
+            </section>
           </aside>
-          <aside class="col-sm-10 col-md-6">
+          <aside class="col-sm-4 col-md-2">
             <section class="panel bg-dark m-b-n-lg no-border device animated fadeInUp">
               <header class="panel-heading text-left">
                 <i class="fa fa-circle fa-fw"></i>
                 <i class="fa fa-circle fa-fw"></i>
                 <i class="fa fa-circle fa-fw"></i>
               </header>
-              <img src="images/main.png" class="img-full" >
+              <img src="static/images/main.png" class="img-full" >
             </section>
           </aside>
-          <aside class="col-md-3 v-bottom">
-            <div class="hidden-sm hidden-xs">
-              <section class="panel bg-light m-b-n-lg m-l-n-lg aside no-border device phone animated fadeInRightBig">
-                <header class="panel-heading text-center">
-                  <i class="fa fa-minus fa-2x text-white m-b-n-xs block"></i>
-                </header>
-                <div class="">
-                  <div class="m-l-xs m-r-xs">
-                    <img src="images/phone-1.png" class="img-full" >
-                  </div>
-                </div>
-              </section>
-            </div>
+          <aside class="col-sm-4 col-md-2">
+            <section class="panel bg-dark m-b-n-lg no-border device animated fadeInRight">
+              <header class="panel-heading text-left">
+                <i class="fa fa-circle fa-fw"></i>
+                <i class="fa fa-circle fa-fw"></i>
+                <i class="fa fa-circle fa-fw"></i>
+              </header>
+              <img src="static/images/main.png" class="img-full" >
+            </section>
           </aside>
+
         </div>
       </div>
       <div class="dker pos-rlt">
         <div class="container wrapper">
           <div class="m-t-lg m-b-lg text-center">
-            For your faster and easier web development.            
+            <p>Unparalleled quality, unparalled price. Seriously, we
+              <span data-toggle="tooltip" data-placement="top" title="" data-original-title="Our offer: if you don't love Prepp'd after your first week of using it, we'll refund you, no questions asked.">
+                <em><u>guarantee it.</u></em>
+              </span>
+            </p>
           </div>
         </div>
       </div>
@@ -130,156 +129,120 @@
     <div id="about">
       <div class="container">
         <div class="m-t-xl m-b-xl text-center wrapper">
-          <h3>Responsive web application and admin dashboard template</h3>
-          <p class="text-muted">This web based app template give you much power to build your great application.</p>
-        </div>
-        <div class="row m-t-xl m-b-xl text-center">
-          <div class="col-sm-4" data-ride="animated" data-animation="fadeInLeft" data-delay="300">
-            <p class="h3 m-b-lg">
-              <i class="fa fa-lightbulb-o fa-3x text-info"></i>
-            </p>
-            <div class="">
-              <h4 class="m-t-none">Web Application</h4>
-              <p class="text-muted m-t-lg">Many mobile app widgets and components, it's fully responsive, it can run on all the size of the screens. Start work on your great idea today!</p>
+          <h3>Some content boasting about how great Prepp'd is</h3>
+          <p class="text-muted">Some content boasting about how great Prepp'd is<p>
+          </div>
+          <div class="row m-t-xl m-b-xl text-center">
+            <div class="col-sm-3" data-ride="animated" data-animation="fadeInLeft" data-delay="300">
+              <p class="h3 m-b-lg">
+                <i class="fa fa-lightbulb-o fa-3x text-info"></i>
+              </p>
+              <div class="">
+                <h4 class="m-t-none">Interview Day-Like Content</h4>
+                <p class="text-muted m-t-lg">Get <b>unlimited access to volumes of content</b> to help you prepare, from <b>written guides</b> to the <b>internet's largest bank of full-context cases</b> and solutions, all written by top consultants and ex-consultants at top firms. </p>
+              </div>
+            </div>
+            <div class="col-sm-3" data-ride="animated" data-animation="fadeInLeft" data-delay="600">
+              <p class="h3 m-b-lg">
+                <i class="fa fa-signal fa-3x text-info"></i>
+              </p>
+              <div class="">
+                <h4 class="m-t-none">Performance Tracking and Readiness Benchmarking</h4>
+                <p class="text-muted m-t-lg"><b>Plan and track your preparation </b>over time, and <b>benchmark your readiness</b> to <b>industry expectations and peer performance.</b></p>
+              </div>
+            </div>
+            <div class="col-sm-3" data-ride="animated" data-animation="fadeInLeft" data-delay="900">
+              <p class="h3 m-b-lg">
+                <i class="fa fa-rocket fa-3x text-info"></i>
+              </p>
+              <div class="">
+                <h4 class="m-t-none">Interactive Cases, Solutions and Evaluation Rubrics</h4>
+                <p class="text-muted m-t-lg">Drill <b>whole cases or individual components like structuring or quantitative analysis, </b> on an intuitive and responsive platform - no more PDFs and broken '90s-style websites!</p>
+              </div>
+            </div>
+            <div class="col-sm-3" data-ride="animated" data-animation="fadeInLeft" data-delay="1200">
+              <p class="h3 m-b-lg">
+                <i class="fa fa-rocket fa-3x text-info"></i>
+              </p>
+              <div class="">
+                <h4 class="m-t-none">Case-Buddy Finder and Q&A Community</h4>
+                <p class="text-muted m-t-lg">Access Prepp'd forums to <b>ask questions about recruiting</b> and the industry, or better yet, <b>find case buddies in your area to prepare with!</b></p>
+              </div>
             </div>
           </div>
-          <div class="col-sm-4" data-ride="animated" data-animation="fadeInLeft" data-delay="600">
-            <p class="h3 m-b-lg">
-              <i class="fa fa-signal fa-3x text-info"></i>
-            </p>
-            <div class="">
-              <h4 class="m-t-none">Admin Dashboard</h4>
-              <p class="text-muted m-t-lg">It also can be used as admin dashboard, it has tables, charts and other useful components for system management, graph data shows and analysis.</p>
-            </div>
-          </div>
-          <div class="col-sm-4" data-ride="animated" data-animation="fadeInLeft" data-delay="900">
-            <p class="h3 m-b-lg">
-              <i class="fa fa-rocket fa-3x text-info"></i>
-            </p>
-            <div class="">
-              <h4 class="m-t-none">App Landing</h4>
-              <p class="text-muted m-t-lg">This template also have a front end site that for your application landing, It have the features introduction, blog section, and a price table included.</p>
-            </div>
-          </div>
-        </div>
-        <div class="m-t-xl m-b-xl text-center wrapper">
-          <p class="h5">You can use it to build your 
-            <span class="text-primary">Content manage system</span>, 
-            <span class="text-primary">Travel app</span>, 
-            <span class="text-primary">Medical app</span>...
-          </p>
         </div>
       </div>
-    </div>
-    <div id="responsive" class="bg-dark">
-      <div class="text-center">
+
+      <div id="Testimonials" style="background-color:#ffffff">
         <div class="container">
-          <div class="m-t-xl m-b-xl wrapper">
-            <h3 class="text-white">Your application will works no matter where you are</h3>
-            <p>You can use your application at anywhere in the world. <br>This template works on <span class="text-primary text-ul">mobile device</span> too.</p>
+          <div class="m-t-s m-b-s text-center wrapper">
+            <h3>Some of our supporters</h3>
+            <p class="text-muted">Although we don't formally partner with consulting firms, we have received Testimonials and support from consultants in many prestigious roles!.<p>
+            </div>
+
+<div class="m-t-s m-b-xl text-center wrapper">
+            <div class="testimonial-container">
+             <img src="/static/images/firms.jpg" alt="" height="145" width="804" />
+            </div>
+</div>
           </div>
-          <div class="row m-t-xl m-b-xl">
-            <div class="col-sm-4 wrapper-xl" data-ride="animated" data-animation="fadeInLeft" data-delay="300">
-              <p class="text-center h2 m-b-lg m-t-lg">
-                <span class="fa-stack fa-2x">
-                  <i class="fa fa-circle fa-stack-2x text-dark"></i>
-                  <i class="fa fa-mobile fa-stack-1x text-muted"></i>
-                </span>
-              </p>
-              <p>Mobile</p>
-            </div>
-            <div class="col-sm-4 wrapper-xl" data-ride="animated" data-animation="fadeInLeft" data-delay="600">
-              <p class="text-center h1 m-b-lg">
-                <span class="fa-stack fa-2x">
-                  <i class="fa fa-circle fa-stack-2x text-dark"></i>
-                  <i class="fa fa-tablet fa-stack-1x text-muted"></i>
-                </span>
-              </p>
-              <p>Tablet</p>
-            </div>
-            <div class="col-sm-4 wrapper-xl" data-ride="animated" data-animation="fadeInLeft" data-delay="900">
-              <p class="text-center h2 m-b-lg m-t-lg">
-                <span class="fa-stack fa-2x">
-                  <i class="fa fa-circle fa-stack-2x text-dark"></i>
-                  <i class="fa fa-desktop fa-stack-1x text-muted text-md"></i>
-                </span>
-              </p>
-              <p>Desktop</p>
+        </div>
+
+
+      </section>
+
+      <!-- footer -->
+      <footer id="footer">
+        <div class="bg-primary text-center">
+          <div class="container wrapper">
+            <div class="m-t-xl m-b">
+              <em>Your consulting offer is waiting for you. So what are you waiting for?</em>
+              <a href="signup.html" target="_blank" class="btn btn-lg btn-dark m-sm">Try it now!</a>
+              <a href="features.html" target="_blank" class="btn btn-lg btn-warning b-white bg-empty m-sm">Read more</a>
             </div>
           </div>
+          <i class="fa fa-caret-down fa-4x text-primary m-b-n-lg block"></i>
         </div>
-      </div>
-    </div> 
-    <div id="newsletter" class="bg-white clearfix wrapper-lg">
-      <div class="container text-center m-t-xl m-b-xl" data-ride="animated" data-animation="fadeIn">        
-        <h2>Newsletter</h2>
-        <p>Do not want to miss anything? Subscribe to our newsletter box</p>
-        <form class="form-inline m-t-xl m-b-xl">
-          <div class="form-group">
-            <input class="form-control input-lg" placeholder="Your email" data-ride="animated" data-animation="fadeInLeftBig" data-delay="300">
-          </div>
-          <button type="submit" class="btn btn-default btn-lg" data-ride="animated" data-animation="fadeInRightBig" data-delay="600">Subscribe</button>
-        </form>
-      </div>
-    </div>
-	</section>
-  
-  <!-- footer -->
-  <footer id="footer">
-    <div class="bg-primary text-center">
-      <div class="container wrapper">
-        <div class="m-t-xl m-b">
-          For your faster and easier web development.
-          <a href="http://themeforest.net/user/Flatfull/portfolio?ref=flatfull" target="_blank" class="btn btn-lg btn-dark b-white bg-empty m-sm">Download it</a>
-          <a href="index.html" target="_blank" class="btn btn-lg btn-warning b-white bg-empty m-sm">Live Preview</a>
-        </div>
-      </div>
-      <i class="fa fa-caret-down fa-4x text-primary m-b-n-lg block"></i>
-    </div>
-    <div class="bg-dark dker wrapper">
-      <div class="container text-center m-t-lg">
-        <div class="row m-t-xl m-b-xl">
-          <div class="col-sm-4" data-ride="animated" data-animation="fadeInLeft" data-delay="300">
-            <i class="fa fa-map-marker fa-3x icon-muted"></i>
-            <h5 class="text-uc m-b m-t-lg">Find Us</h5>
-            <p class="text-sm">23 soe Midlokls <br>
-              120002 Loki — UNITED KINGDOM
-             </p>
-          </div>
-          <div class="col-sm-4" data-ride="animated" data-animation="fadeInUp" data-delay="600">
-            <i class="fa fa-envelope-o fa-3x icon-muted"></i>
-            <h5 class="text-uc m-b m-t-lg">Mail Us</h5>
-            <p class="text-sm"><a href="mailto:hey@example.com">info@example.com</a></p>
-          </div>
-          <div class="col-sm-4" data-ride="animated" data-animation="fadeInRight" data-delay="900">
-            <i class="fa fa-globe fa-3x icon-muted"></i>
-            <h5 class="text-uc m-b m-t-lg">Join Us</h5>
-            <p class="text-sm">Send your resume to <br><a href="mailto:hey@example.com">recruit@example.com</a></p>
+        <div class="bg-dark dker wrapper">
+          <div class="container text-center m-t-lg">
+            <div class="row m-t-s m-b-s">
+              <div class="col-sm-4" data-ride="animated" data-animation="fadeInLeft" data-delay="300">
+                <i class="fa fa-map-marker fa-3x icon-muted"></i>
+                <h5 class="text-uc m-b m-t-lg">Find Us</h5>
+                <p>
+                  <a href="https://www.facebook.com/bepreppd" class="btn btn-icon btn-rounded btn-facebook bg-empty m-sm"><i class="fa fa-facebook"></i></a>
+                  <a href="https://www.linkedin.com/company/bepreppd" class="btn btn-icon btn-rounded btn-twitter bg-empty m-sm"><i class="fa fa-linkedin"></i></a>
+                </p>
+              </div>
+              <div class="col-sm-4" data-ride="animated" data-animation="fadeInUp" data-delay="600">
+                <i class="fa fa-envelope-o fa-3x icon-muted"></i>
+                <h5 class="text-uc m-b m-t-lg">Mail Us</h5>
+                <p class="text-sm"><a href="mailto:contact@bepreppd.com">contact@bepreppd.com</a></p>
+              </div>
+              <div class="col-sm-4" data-ride="animated" data-animation="fadeInRight" data-delay="900">
+                <i class="fa fa-globe fa-3x icon-muted"></i>
+                <h5 class="text-uc m-b m-t-lg">Join Us</h5>
+                <p class="text-sm">Send your resume to <br><a href="mailto:recruit@bepreppd.com">recruit@bepreppd.com</a></p>
+              </div>
+            </div>
+            <div class="m-t-s m-b-s">
+              <p>
+                <a href="#content" data-jump="true" class="btn btn-icon btn-rounded btn-dark b-dark bg-empty m-sm text-muted"><i class="fa fa-angle-up"></i></a>
+              </p>
+            </div>
           </div>
         </div>
-        <div class="m-t-xl m-b-xl">
-          <p>
-            <a href="#" class="btn btn-icon btn-rounded btn-facebook bg-empty m-sm"><i class="fa fa-facebook"></i></a>
-            <a href="#" class="btn btn-icon btn-rounded btn-twitter bg-empty m-sm"><i class="fa fa-twitter"></i></a>
-            <a href="#" class="btn btn-icon btn-rounded btn-gplus bg-empty m-sm"><i class="fa fa-google-plus"></i></a>
-          </p>
-          <p>
-            <a href="#content" data-jump="true" class="btn btn-icon btn-rounded btn-dark b-dark bg-empty m-sm text-muted"><i class="fa fa-angle-up"></i></a>
-          </p>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- / footer -->  <script src="js/jquery.min.js"></script>
-  <!-- Bootstrap -->
-  <script src="js/bootstrap.js"></script>
-  <!-- App -->
-  <script src="js/app.js"></script> 
-  <script src="js/slimscroll/jquery.slimscroll.min.js"></script>
-  
-  <script src="js/appear/jquery.appear.js"></script>
-  <script src="js/scroll/smoothscroll.js"></script>
-  <script src="js/landing.js"></script>
-  <script src="js/app.plugin.js"></script>
-</body>
-</html>
+      </footer>
+      <!-- / footer -->  <script src="{% static 'js/jquery.min.js' %}"></script>
+      <!-- Bootstrap -->
+      <script src="{% static 'js/bootstrap.js' %}"></script>
+      <!-- App -->
+      <script src="{% static 'js/app.js' %}"></script>
+      <script src="{% static 'js/slimscroll/jquery.slimscroll.min.js' %}"></script>
+
+      <script src="{% static 'js/appear/jquery.appear.js' %}"></script>
+      <script src="{% static 'js/scroll/smoothscroll.js' %}"></script>
+      <script src="{% static 'js/landing.js' %}"></script>
+      <script src="{% static 'js/app.plugin.js' %}"></script>
+    </body>
+    </html>

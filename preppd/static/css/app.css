@@ -3259,3 +3259,7 @@ fieldset[disabled] .btn-gplus.active {
     padding: 15px;
   }
 }
+
+.testimonial-container{
+    text-align: justify;
+}
