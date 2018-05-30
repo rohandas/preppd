@@ -43,3 +43,18 @@ def view_mental_math_practice_page(request):
 
     context = {'num1':num1, 'num2':num2, 'operator':operator, 'answer':answer}
     return render_to_response('math.html', context)
+
+def view_structuring_practice_page(request):
+    return render(request, 'structuring.html', {})
+
+def view_getting_started_page(request):
+    return render(request, 'getting-started.html', {})
+
+def view_buddy_finder_page(request):
+    return render(request, 'buddy-finder.html', {})
+
+def nav(request):
+    return render(request, 'nav.html', {})
+
+def test(request):
+    return render(request, 'test.html', {})
