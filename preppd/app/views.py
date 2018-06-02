@@ -24,7 +24,7 @@ def view_signin_page(request):
 def view_signup_page(request):
     return render(request, 'signup.html', {})
 
-def view_mental_math_practice_page(request):
+def view_mental_math_dashboard_page(request):
     num1 = random.randint(1, 1000)
     num2 = random.randint(2,40)
     operator = random.randint(1,4)
@@ -55,6 +55,48 @@ def view_buddy_finder_page(request):
 
 def nav(request):
     return render(request, 'nav.html', {})
+
+def header(request):
+    return render(request, 'header.html', {})
+
+def view_mental_math_practice_page(request):
+    return render(request, 'math-practice.html', {})
+
+def view_getting_started_intro_page(request):
+    return render(request, 'getting-started/getting-started-intro.html', {})
+
+def view_getting_started_industry_page(request):
+    return render(request, 'getting-started/getting-started-industry.html', {})
+
+def view_getting_started_firms_page(request):
+    return render(request, 'getting-started/getting-started-firms.html', {})
+
+def view_getting_started_cases_page(request):
+    return render(request, 'getting-started/getting-started-cases.html', {})
+
+def view_getting_started_behaviourals_page(request):
+    return render(request, 'getting-started/getting-started-behaviourals.html', {})
+
+def view_qualitative_analysis_page(request):
+    return render(request, 'cases/qualitative-analysis.html', {})
+
+def view_quantitative_analysis_page(request):
+    return render(request, 'cases/quantitative-analysis.html', {})
+
+def view_ideation_page(request):
+    return render(request, 'cases/ideation.html', {})
+
+def view_full_case_page(request):
+    return render(request, 'cases/full-case.html', {})
+
+def view_experience_questions_page(request):
+    return render(request, 'behaviourals/experience-questions.html', {})
+
+def view_fitandfirm_questions_page(request):
+    return render(request, 'behaviourals/fit-and-firm-questions.html', {})
+
+def view_interview_me_page(request):
+    return render(request, 'interview-me.html', {})
 
 def test(request):
     return render(request, 'test.html', {})

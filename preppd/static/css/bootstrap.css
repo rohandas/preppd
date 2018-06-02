@@ -2721,7 +2721,7 @@ select[multiple].input-lg {
   }
 }
 .btn {
-  display: inline-block;
+  display: ifnline-block;
   padding: 6px 12px;
   margin-bottom: 0;
   font-size: 14px;
@@ -3054,6 +3054,17 @@ fieldset[disabled] .btn-link:focus {
   line-height: 1.33;
   border-radius: 6px;
 }
+.btn-xxl,
+.btn-group-xxl > .btn {
+  padding: 10px 16px;
+  margin:5px 10px;
+  width:120px;
+  height:120px;
+  vertical-align: middle;
+  font-size: 26px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
 .btn-sm,
 .btn-group-sm > .btn {
   padding: 5px 10px;
@@ -3278,7 +3289,7 @@ tbody.collapse.in {
 .btn-group .btn + .btn-group,
 .btn-group .btn-group + .btn,
 .btn-group .btn-group + .btn-group {
-  margin-left: -1px;
+  margin-left: 1px;
 }
 .btn-toolbar {
   margin-left: -5px;
