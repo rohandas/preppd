@@ -89,11 +89,11 @@ def view_ideation_page(request):
 def view_full_case_page(request):
     return render(request, 'cases/full-case.html', {})
 
-def view_experience_questions_page(request):
-    return render(request, 'behaviourals/experience-questions.html', {})
+def view_story_planning_page(request):
+    return render(request, 'behaviourals/story-planning.html', {})
 
-def view_fitandfirm_questions_page(request):
-    return render(request, 'behaviourals/fit-and-firm-questions.html', {})
+def view_behavioural_practice_page(request):
+    return render(request, 'behaviourals/behavioural-practice.html', {})
 
 def view_interview_me_page(request):
     return render(request, 'interview-me.html', {})

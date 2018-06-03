@@ -22,8 +22,8 @@ urlpatterns = [
     url(r'^quantitative-analysis$', views.view_quantitative_analysis_page),
     url(r'^ideation$', views.view_ideation_page),
     url(r'^full-case$', views.view_full_case_page),
-    url(r'^experience-questions$', views.view_experience_questions_page),
-    url(r'^fit-and-firm-questions$', views.view_fitandfirm_questions_page),
+    url(r'^story-planning$', views.view_story_planning_page),
+    url(r'^behavioural-practice$', views.view_behavioural_practice_page),
     url(r'^interview-me$', views.view_interview_me_page),
     url(r'^test$', views.test),
 ]
