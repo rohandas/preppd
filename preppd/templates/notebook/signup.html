@@ -8,8 +8,10 @@
   <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" type="text/css" />
   <link rel="stylesheet" href="{% static 'css/animate.css' %}" type="text/css" />
   <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" type="text/css" />
+  <link rel="stylesheet" href="{% static 'js/select2/select2.css' %}" type="text/css" />
+  <link rel="stylesheet" href="{% static 'js/select2/theme.css' %}" type="text/css" />
   <link rel="stylesheet" href="{% static 'css/font.css' %}" type="text/css" />
-    <link rel="stylesheet" href="{% static 'css/app.css' %}" type="text/css" />
+  <link rel="stylesheet" href="{% static 'css/app.css' %}" type="text/css" />
   <!--[if lt IE 9]>
   <script src="{% static 'js/ie/html5shiv.js' %}"></script>
   <script src="{% static 'js/ie/respond.min.js' %}"></script>
@@ -37,38 +39,366 @@
             <label class="control-label">Email</label>
             <input type="email" placeholder="test@preppd.com" class="form-control input-lg">
           </div>
+
+
+
           <div class="form-group">
-            <label class="control-label">Password</label>
-            <input type="password" id="inputPassword" placeholder="Type a password" class="form-control input-lg">
-          </div>
-          <div class="checkbox">
-            <label>
-              <input type="checkbox">I agree the <a href="#">terms and conditions</a>
-            </label>
-          </div>
-          <button type="submit" class="btn btn-primary">Sign up</button>
-          <div class="line line-dashed"></div>
-          <p class="text-muted text-center"><small>Already have an account?</small></p>
-          <a href="./signin" class="btn btn-default btn-block">Sign in</a>
-        </form>
-      </section>
-    </div>
-  </section>
-  <!-- footer -->
-  <footer id="footer">
-    <div class="text-center padder clearfix">
-      <p>
-        <small>&copy;2018 Prepp'd<br></small>
-      </p>
-    </div>
-  </footer>
-  <!-- / footer -->
-  <script srv="{% static 'js/jquery.min.js' %}"></script>
-  <!-- Bootstrap -->
-  <script srv="{% static 'js/bootstrap.js' %}"></script>
-  <!-- App -->
-  <script srv="{% static 'js/app.js' %}"></script>
-  <script srv="{% static 'js/slimscroll/jquery.slimscroll.min.js' %}"></script>
-    <script srv="{% static 'js/app.plugin.js' %}"></script>
-</body>
-</html>
+            <label class="control-label">Current school</label>
+              <select id="select2-option" class="input-lg" style="width:400px">
+                <optgroup label="I am not currently in school">
+                  <option value="Unemployed">Not currently a student</option>
+                </optgroup>
+                <optgroup label="I am currently in school">
+                  <option value="Unlisted">Not listed here</option>
+                  <option value="Harvard University">Harvard University</option>
+                  <option value="Stanford University">Stanford University</option>
+                  <option value="Massachusetts Institute of Technology">Massachusetts Institute of Technology</option>
+                  <option value="University of California Berkeley">University of California Berkeley</option>
+                  <option value="University of Washington">University of Washington</option>
+                  <option value="University of Michigan">University of Michigan</option>
+                  <option value="Cornell University">Cornell University</option>
+                  <option value="Columbia University New York">Columbia University New York</option>
+                  <option value="University of Pennsylvania">University of Pennsylvania</option>
+                  <option value="University of California Los Angeles UCLA">University of California Los Angeles UCLA</option>
+                  <option value="Yale University">Yale University</option>
+                  <option value="University of Toronto">University of Toronto</option>
+                  <option value="University of California San Diego">University of California San Diego</option>
+                  <option value="Duke University">Duke University</option>
+                  <option value="University of Wisconsin Madison">University of Wisconsin Madison</option>
+                  <option value="Johns Hopkins University">Johns Hopkins University</option>
+                  <option value="University of Texas Austin">University of Texas Austin</option>
+                  <option value="Pennsylvania State University">Pennsylvania State University</option>
+                  <option value="Princeton University">Princeton University</option>
+                  <option value="University of North Carolina Chapel Hill">University of North Carolina Chapel Hill</option>
+                  <option value="University of Chicago">University of Chicago</option>
+                  <option value="New York University">New York University</option>
+                  <option value="University of British Columbia">University of British Columbia</option>
+                  <option value="University of Illinois Urbana Champaign">University of Illinois Urbana Champaign</option>
+                  <option value="University of Southern California">University of Southern California</option>
+                  <option value="Northwestern University">Northwestern University</option>
+                  <option value="University of California Davis">University of California Davis</option>
+                  <option value="University of Florida">University of Florida</option>
+                  <option value="Michigan State University">Michigan State University</option>
+                  <option value="University of Maryland College Park">University of Maryland College Park</option>
+                  <option value="University of California Irvine">University of California Irvine</option>
+                  <option value="Ohio State University">Ohio State University</option>
+                  <option value="Purdue University">Purdue University</option>
+                  <option value="Carnegie Mellon University">Carnegie Mellon University</option>
+                  <option value="California Institute of Technology Caltech">California Institute of Technology Caltech</option>
+                  <option value="Washington University Saint Louis">Washington University Saint Louis</option>
+                  <option value="University of Pittsburgh">University of Pittsburgh</option>
+                  <option value="Boston University">Boston University</option>
+                  <option value="University of California San Francisco">University of California San Francisco</option>
+                  <option value="Georgia Institute of Technology">Georgia Institute of Technology</option>
+                  <option value="University of Colorado Boulder">University of Colorado Boulder</option>
+                  <option value="University of Arizona">University of Arizona</option>
+                  <option value="Rutgers The State University of New Jersey">Rutgers The State University of New Jersey</option>
+                  <option value="McGill University">McGill University</option>
+                  <option value="Arizona State University">Arizona State University</option>
+                  <option value="University of Virginia">University of Virginia</option>
+                  <option value="Texas A&M University">Texas A&M University</option>
+                  <option value="Vanderbilt University">Vanderbilt University</option>
+                  <option value="University of Alberta">University of Alberta</option>
+                  <option value="University of California Santa Barbara">University of California Santa Barbara</option>
+                  <option value="Indiana University Bloomington">Indiana University Bloomington</option>
+                  <option value="Emory University">Emory University</option>
+                  <option value="Brown University">Brown University</option>
+                  <option value="University of Iowa">University of Iowa</option>
+                  <option value="North Carolina State University">North Carolina State University</option>
+                  <option value="Virginia Polytechnic Institute and State University">Virginia Polytechnic Institute and State University</option>
+                  <option value="Tufts University">Tufts University</option>
+                  <option value="University of Rochester">University of Rochester</option>
+                  <option value="University of Massachusetts Amherst">University of Massachusetts Amherst</option>
+                  <option value="University of Waterloo">University of Waterloo</option>
+                  <option value="Iowa State University">Iowa State University</option>
+                  <option value="University of Calgary">University of Calgary</option>
+                  <option value="Rice University">Rice University</option>
+                  <option value="University of Georgia">University of Georgia</option>
+                  <option value="University of Illinois Chicago">University of Illinois Chicago</option>
+                  <option value="University of Delaware">University of Delaware</option>
+                  <option value="City University of New York">City University of New York</option>
+                  <option value="University at Buffalo">University at Buffalo</option>
+                  <option value="University of Tennessee Knoxville">University of Tennessee Knoxville</option>
+                  <option value="Florida State University">Florida State University</option>
+                  <option value="University of Miami">University of Miami</option>
+                  <option value="Oregon State University">Oregon State University</option>
+                  <option value="Simon Fraser University">Simon Fraser University</option>
+                  <option value="University of California Santa Cruz">University of California Santa Cruz</option>
+                  <option value="University of Nebraska Lincoln">University of Nebraska Lincoln</option>
+                  <option value="Colorado State University">Colorado State University</option>
+                  <option value="McMaster University">McMaster University</option>
+                  <option value="University of California Riverside">University of California Riverside</option>
+                  <option value="Universidad Nacional Autónoma de México">Universidad Nacional Autónoma de México</option>
+                  <option value="Dartmouth College">Dartmouth College</option>
+                  <option value="University of Kentucky">University of Kentucky</option>
+                  <option value="University of Notre Dame">University of Notre Dame</option>
+                  <option value="University of Connecticut">University of Connecticut</option>
+                  <option value="Case Western Reserve University">Case Western Reserve University</option>
+                  <option value="Georgetown University">Georgetown University</option>
+                  <option value="University of South Florida">University of South Florida</option>
+                  <option value="University of Cincinnati">University of Cincinnati</option>
+                  <option value="University of Western Ontario">University of Western Ontario</option>
+                  <option value="University of Missouri Columbia">University of Missouri Columbia</option>
+                  <option value="University of New Mexico">University of New Mexico</option>
+                  <option value="Temple University">Temple University</option>
+                  <option value="University of Oregon">University of Oregon</option>
+                  <option value="Université de Montréal">Université de Montréal</option>
+                  <option value="University of Kansas">University of Kansas</option>
+                  <option value="Wayne State University">Wayne State University</option>
+                  <option value="Washington State University Pullman">Washington State University Pullman</option>
+                  <option value="University of Houston">University of Houston</option>
+                  <option value="M D Anderson Cancer Center University of Texas">M D Anderson Cancer Center University of Texas</option>
+                  <option value="Université d'Ottawa / University of Ottawa">Université d'Ottawa / University of Ottawa</option>
+                  <option value="University of Alabama Birmingham">University of Alabama Birmingham</option>
+                  <option value="Queen's University Kingston">Queen's University Kingston</option>
+                  <option value="University of Victoria British Columbia">University of Victoria British Columbia</option>
+                  <option value="University of South Carolina">University of South Carolina</option>
+                  <option value="Stony Brook University">Stony Brook University</option>
+                  <option value="University of Oklahoma">University of Oklahoma</option>
+                  <option value="George Mason University">George Mason University</option>
+                  <option value="York University">York University</option>
+                  <option value="Drexel University">Drexel University</option>
+                  <option value="Louisiana State University">Louisiana State University</option>
+                  <option value="Virginia Commonwealth University">Virginia Commonwealth University</option>
+                  <option value="Rensselaer Polytechnic Institute">Rensselaer Polytechnic Institute</option>
+                  <option value="Dalhousie University">Dalhousie University</option>
+                  <option value="University of Colorado Denver">University of Colorado Denver</option>
+                  <option value="University of Maryland Baltimore">University of Maryland Baltimore</option>
+                  <option value="Brigham Young University">Brigham Young University</option>
+                  <option value="Université Laval">Université Laval</option>
+                  <option value="Oregon Health & Science University">Oregon Health & Science University</option>
+                  <option value="University of Central Florida">University of Central Florida</option>
+                  <option value="Baylor College of Medicine">Baylor College of Medicine</option>
+                  <option value="University of Texas Dallas">University of Texas Dallas</option>
+                  <option value="Georgia State University">Georgia State University</option>
+                  <option value="University of Manitoba">University of Manitoba</option>
+                  <option value="University of Vermont">University of Vermont</option>
+                  <option value="Florida International University">Florida International University</option>
+                  <option value="University of Saskatchewan">University of Saskatchewan</option>
+                  <option value="San Diego State University">San Diego State University</option>
+                  <option value="Clemson University">Clemson University</option>
+                  <option value="University of Texas Southwestern Medical Center at Dallas">University of Texas Southwestern Medical Center at Dallas</option>
+                  <option value="Boston College">Boston College</option>
+                  <option value="Wake Forest University">Wake Forest University</option>
+                  <option value="Northeastern University">Northeastern University</option>
+                  <option value="University of Guelph">University of Guelph</option>
+                  <option value="Utah State University">Utah State University</option>
+                  <option value="University of New Hampshire">University of New Hampshire</option>
+                  <option value="Oklahoma State University Stillwater">Oklahoma State University Stillwater</option>
+                  <option value="University of Utah">University of Utah</option>
+                  <option value="West Virginia University">West Virginia University</option>
+                  <option value="Carleton University">Carleton University</option>
+                  <option value="University of Alabama">University of Alabama</option>
+                  <option value="Auburn University">Auburn University</option>
+                  <option value="Tulane University">Tulane University</option>
+                  <option value="Yeshiva University">Yeshiva University</option>
+                  <option value="University of North Texas">University of North Texas</option>
+                  <option value="Texas Tech University">Texas Tech University</option>
+                  <option value="Kent State University">Kent State University</option>
+                  <option value="University at Albany">University at Albany</option>
+                  <option value="University of Wisconsin Milwaukee">University of Wisconsin Milwaukee</option>
+                  <option value="Kansas State University">Kansas State University</option>
+                  <option value="University of Mississippi">University of Mississippi</option>
+                  <option value="University of Texas Arlington">University of Texas Arlington</option>
+                  <option value="Concordia University Montréal">Concordia University Montréal</option>
+                  <option value="University of Massachusetts Medical School at Worcester">University of Massachusetts Medical School at Worcester</option>
+                  <option value="University of Louisville">University of Louisville</option>
+                  <option value="Southern Methodist University">Southern Methodist University</option>
+                  <option value="University of Maryland Baltimore County">University of Maryland Baltimore County</option>
+                  <option value="University of Arkansas Fayetteville">University of Arkansas Fayetteville</option>
+                  <option value="Brandeis University">Brandeis University</option>
+                  <option value="Université du Québec Montréal">Université du Québec Montréal</option>
+                  <option value="University of Missouri Kansas City">University of Missouri Kansas City</option>
+                  <option value="Medical University of South Carolina">Medical University of South Carolina</option>
+                  <option value="Rochester Institute of Technology">Rochester Institute of Technology</option>
+                  <option value="University of Texas Health Science Center at San Antonio">University of Texas Health Science Center at San Antonio</option>
+                  <option value="Baylor University">Baylor University</option>
+                  <option value="Memorial University of Newfoundland">Memorial University of Newfoundland</option>
+                  <option value="Portland State University">Portland State University</option>
+                  <option value="Rockefeller University">Rockefeller University</option>
+                  <option value="Mississippi State University">Mississippi State University</option>
+                  <option value="Michigan Technological University">Michigan Technological University</option>
+                  <option value="University of Wyoming">University of Wyoming</option>
+                  <option value="Montana State University">Montana State University</option>
+                  <option value="Saint Louis University">Saint Louis University</option>
+                  <option value="New Mexico State University">New Mexico State University</option>
+                  <option value="University of Nevada Reno">University of Nevada Reno</option>
+                  <option value="University of Texas San Antonio">University of Texas San Antonio</option>
+                  <option value="Illinois Institute of Technology">Illinois Institute of Technology</option>
+                  <option value="Loyola University Chicago">Loyola University Chicago</option>
+                  <option value="College of William & Mary">College of William & Mary</option>
+                  <option value="Old Dominion University">Old Dominion University</option>
+                  <option value="University of Idaho">University of Idaho</option>
+                  <option value="University of Rhode Island">University of Rhode Island</option>
+                  <option value="Ryerson University">Ryerson University</option>
+                  <option value="Lehigh University">Lehigh University</option>
+                  <option value="Northern Illinois University">Northern Illinois University</option>
+                  <option value="Université de Sherbrooke">Université de Sherbrooke</option>
+                  <option value="Medical College of Wisconsin">Medical College of Wisconsin</option>
+                  <option value="Thomas Jefferson University">Thomas Jefferson University</option>
+                  <option value="University of Nevada Las Vegas">University of Nevada Las Vegas</option>
+                  <option value="Binghamton University">Binghamton University</option>
+                  <option value="University of North Carolina Charlotte">University of North Carolina Charlotte</option>
+                  <option value="George Washington University">George Washington University</option>
+                  <option value="Ohio University">Ohio University</option>
+                  <option value="University of Denver">University of Denver</option>
+                  <option value="University of Kansas Medical Center">University of Kansas Medical Center</option>
+                  <option value="University of Akron">University of Akron</option>
+                  <option value="Icahn School of Medicine at Mount Sinai">Icahn School of Medicine at Mount Sinai</option>
+                  <option value="Southern Illinois University">Southern Illinois University</option>
+                  <option value="American University Washington DC">American University Washington DC</option>
+                  <option value="North Dakota State University">North Dakota State University</option>
+                  <option value="San Francisco State University">San Francisco State University</option>
+                  <option value="University of Texas Medical Branch Galveston">University of Texas Medical Branch Galveston</option>
+                  <option value="Fordham University">Fordham University</option>
+                  <option value="Northern Arizona University">Northern Arizona University</option>
+                  <option value="Colorado School of Mines">Colorado School of Mines</option>
+                  <option value="Worcester Polytechnic Institute">Worcester Polytechnic Institute</option>
+                  <option value="East Carolina University">East Carolina University</option>
+                  <option value="University of Toledo">University of Toledo</option>
+                  <option value="University of Montana Missoula">University of Montana Missoula</option>
+                  <option value="University of Texas Health Science Center at Houston">University of Texas Health Science Center at Houston</option>
+                  <option value="California State University Fullerton">California State University Fullerton</option>
+                  <option value="University of Massachusetts Boston">University of Massachusetts Boston</option>
+                  <option value="Centro de Investigación y de Estudios Avanzados del IPN CINVESTAV">Centro de Investigación y de Estudios Avanzados del IPN CINVESTAV</option>
+                  <option value="Miami University of Ohio">Miami University of Ohio</option>
+                  <option value="Florida Atlantic University">Florida Atlantic University</option>
+                  <option value="University of Windsor">University of Windsor</option>
+                  <option value="University of Memphis (including Lambuth)">University of Memphis (including Lambuth)</option>
+                  <option value="University of New Brunswick">University of New Brunswick</option>
+                  <option value="University of Nebraska Medical Center">University of Nebraska Medical Center</option>
+                  <option value="University of North Carolina at Greensboro">University of North Carolina at Greensboro</option>
+                  <option value="University of Minnesota Twin Cities">University of Minnesota Twin Cities</option>
+                  <option value="University of Texas El Paso">University of Texas El Paso</option>
+                  <option value="California Polytechnic State University Cal Poly">California Polytechnic State University Cal Poly</option>
+                  <option value="City College of New York CUNY">City College of New York CUNY</option>
+                  <option value="Missouri University of Science & Technology">Missouri University of Science & Technology</option>
+                  <option value="University of Regina">University of Regina</option>
+                  <option value="San José State University">San José State University</option>
+                  <option value="University of Alaska Fairbanks">University of Alaska Fairbanks</option>
+                  <option value="Creighton University">Creighton University</option>
+                  <option value="Bowling Green State University">Bowling Green State University</option>
+                  <option value="University of North Dakota">University of North Dakota</option>
+                  <option value="Depaul University">Depaul University</option>
+                  <option value="Villanova University">Villanova University</option>
+                  <option value="École Polytechnique de Montréal">École Polytechnique de Montréal</option>
+                  <option value="Wright State University">Wright State University</option>
+                  <option value="Santa Clara University">Santa Clara University</option>
+                  <option value="University of Massachusetts Lowell">University of Massachusetts Lowell</option>
+                  <option value="Florida Institute of Technology">Florida Institute of Technology</option>
+                  <option value="CUNY Hunter College">CUNY Hunter College</option>
+                  <option value="Texas State University">Texas State University</option>
+                  <option value="University of Arkansas for Medical Sciences">University of Arkansas for Medical Sciences</option>
+                  <option value="California State University Northridge">California State University Northridge</option>
+                  <option value="Boise State University">Boise State University</option>
+                  <option value="Western Michigan University">Western Michigan University</option>
+                  <option value="Oakland University">Oakland University</option>
+                  <option value="University of California Merced">University of California Merced</option>
+                  <option value="Brock University">Brock University</option>
+                  <option value="Clark University">Clark University</option>
+                  <option value="California State University Long Beach">California State University Long Beach</option>
+                  <option value="University of Dayton">University of Dayton</option>
+                  <option value="Nova Southeastern University">Nova Southeastern University</option>
+                  <option value="James Madison University">James Madison University</option>
+                  <option value="University of Missouri Saint Louis">University of Missouri Saint Louis</option>
+                  <option value="Marquette University">Marquette University</option>
+                  <option value="University of Oklahoma Health Sciences Center">University of Oklahoma Health Sciences Center</option>
+                  <option value="Institute for Advanced Study">Institute for Advanced Study</option>
+                  <option value="University of Southern Mississippi">University of Southern Mississippi</option>
+                  <option value="Wilfrid Laurier University">Wilfrid Laurier University</option>
+                  <option value="Wesleyan University">Wesleyan University</option>
+                  <option value="University of Alabama Huntsville">University of Alabama Huntsville</option>
+                  <option value="Clarkson University">Clarkson University</option>
+                  <option value="University of Minnesota Duluth">University of Minnesota Duluth</option>
+                  <option value="Santa Fe Institute">Santa Fe Institute</option>
+                  <option value="Appalachian State University">Appalachian State University</option>
+                  <option value="Instituto Politécnico Nacional">Instituto Politécnico Nacional</option>
+                  <option value="University of Nebraska Omaha">University of Nebraska Omaha</option>
+                  <option value="Augusta University (Georgia Regents University Augusta State University)">Augusta University (Georgia Regents University Augusta State University)</option>
+                  <option value="Stevens Institute of Technology">Stevens Institute of Technology</option>
+                  <option value="New School">New School</option>
+                  <option value="University of Hawaii at Manoa">University of Hawaii at Manoa</option>
+                  <option value="California State University Los Angeles">California State University Los Angeles</option>
+                  <option value="University of Massachusetts Dartmouth">University of Massachusetts Dartmouth</option>
+                  <option value="University of Tennessee Health Science Center Memphis">University of Tennessee Health Science Center Memphis</option>
+                  <option value="Ball State University">Ball State University</option>
+                  <option value="University of South Dakota">University of South Dakota</option>
+                  <option value="Texas Christian University">Texas Christian University</option>
+                  <option value="Western Washington University">Western Washington University</option>
+                  <option value="Central Michigan University">Central Michigan University</option>
+                  <option value="Cleveland State University">Cleveland State University</option>
+                  <option value="CUNY Brooklyn College">CUNY Brooklyn College</option>
+                  <option value="Louisiana Tech University">Louisiana Tech University</option>
+                  <option value="Wichita State University">Wichita State University</option>
+                  <option value="Swarthmore College">Swarthmore College</option>
+                  <option value="Howard University">Howard University</option>
+                  <option value="South Dakota State University">South Dakota State University</option>
+                  <option value="University of Lethbridge">University of Lethbridge</option>
+                  <option value="Weill Medical College Cornell University">Weill Medical College Cornell University</option>
+                  <option value="Uniformed Services University of the Health Sciences">Uniformed Services University of the Health Sciences</option>
+                  <option value="Bucknell University">Bucknell University</option>
+                  <option value="Chapman University">Chapman University</option>
+                  <option value="University of Mississippi Medical Center">University of Mississippi Medical Center</option>
+                  <option value="New Mexico Institute of Mining & Technology New Mexico Tech">New Mexico Institute of Mining & Technology New Mexico Tech</option>
+                  <option value="Idaho State University">Idaho State University</option>
+                  <option value="Loma Linda University">Loma Linda University</option>
+                  <option value="California State University Fresno">California State University Fresno</option>
+                  <option value="Universidad Autónoma Metropolitana">Universidad Autónoma Metropolitana</option>
+                  <option value="CUNY Queens College">CUNY Queens College</option>
+                  <option value="Wellesley College">Wellesley College</option>
+                  <option value="Kennesaw State University">Kennesaw State University</option>
+                  <option value="Université du Québec">Université du Québec</option>
+                  <option value="Lakehead University">Lakehead University</option>
+                </optgroup>
+
+              </select>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="form-group">
+              <label class="control-label">Password</label>
+              <input type="password" id="inputPassword" placeholder="Type a password" class="form-control input-lg">
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox">I agree the <a href="#">terms and conditions</a>
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign up</button>
+            <div class="line line-dashed"></div>
+            <p class="text-muted text-center"><small>Already have an account?</small></p>
+            <a href="./signin" class="btn btn-default btn-block">Sign in</a>
+          </form>
+        </section>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer id="footer">
+      <div class="text-center padder clearfix">
+        <p>
+          <small>&copy;2018 Prepp'd<br></small>
+        </p>
+      </div>
+    </footer>
+    <!-- / footer -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <!-- Bootstrap -->
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <!-- App -->
+    <script src="{% static 'js/select2/select2.min.js' %}"></script>
+    <script srv="{% static 'js/app.js' %}"></script>
+    <script src="{% static 'js/combodate/combodate.js' %}"></script>
+    <script src="{% static 'js/slimscroll/jquery.slimscroll.min.js' %}"></script>
+    <script src="{% static 'js/app.plugin.js' %}"></script>
+  </body>
+  </html>

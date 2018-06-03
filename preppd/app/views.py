@@ -98,5 +98,8 @@ def view_behavioural_practice_page(request):
 def view_interview_me_page(request):
     return render(request, 'interview-me.html', {})
 
+def view_expert_call_page(request):
+    return render(request, 'expert-call.html', {})
+
 def test(request):
     return render(request, 'test.html', {})

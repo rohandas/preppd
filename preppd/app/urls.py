@@ -25,5 +25,6 @@ urlpatterns = [
     url(r'^story-planning$', views.view_story_planning_page),
     url(r'^behavioural-practice$', views.view_behavioural_practice_page),
     url(r'^interview-me$', views.view_interview_me_page),
+    url(r'^expert-call$', views.view_expert_call_page),
     url(r'^test$', views.test),
 ]

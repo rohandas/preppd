@@ -3303,3 +3303,11 @@ audio {
 .clip p {
   cursor: pointer;
 }
+
+#story-column {
+  width: calc(80%/3) !important;
+}
+
+#blank {
+  color: white !important;
+}
