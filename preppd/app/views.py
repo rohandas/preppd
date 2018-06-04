@@ -101,5 +101,8 @@ def view_interview_me_page(request):
 def view_expert_call_page(request):
     return render(request, 'expert-call.html', {})
 
+def view_expert_review_page(request):
+    return render(request, 'expert-review.html', {})
+
 def test(request):
     return render(request, 'test.html', {})
