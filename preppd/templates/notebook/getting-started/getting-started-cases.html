@@ -1,0 +1,275 @@
+<!DOCTYPE html> {% load static %}
+
+<html lang="en" class="app">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Prepp'd | Web Application</title>
+  <meta name="description" content="app, web app, responsive, admin dashboard, admin, flat, flat ui, ui kit, off screen nav" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" type="text/css" />
+  <link rel="stylesheet" href="{% static 'css/animate.css' %}" type="text/css" />
+  <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" type="text/css" />
+  <link rel="stylesheet" href="{% static 'css/font.css' %}" type="text/css" />
+  <link rel="stylesheet" href="{% static 'js/fuelux/fuelux.css' %}" type="text/css" />
+  <link rel="stylesheet" href="{% static 'css/calendar/bootstrap_calendar.css' %}" type="text/css" />
+  <link rel="stylesheet" href="{% static 'js/jvectormap/jquery-jvectormap-1.2.2.css' %}" type="text/css" />
+  <link rel="stylesheet" href="{% static 'css/app.css' %}" type="text/css" />
+
+  <!--[if lt IE 9]>
+  <script src="{% static 'js/ie/html5shiv.js' %}"></script>
+  <script src="{% static 'js/ie/respond.min.js' %}"></script>
+  <script src="{% static 'js/ie/excanvas.js' %}"></script>
+  <![endif]-->
+
+</head>
+<body class="">
+  <section class="vbox">
+    <header class="bg-black dk header navbar navbar-fixed-top-xs" id="header">
+    </header>
+    <section>
+      <section class="hbox stretch">
+        <!-- .aside -->
+        <aside class="bg-light lter b-r aside-md hidden-print hidden-xs" id="nav">
+        </aside>
+        <!-- /.aside -->
+        <section id="content">
+          <section class="vbox">
+            <section class="scrollable">
+              <div class="wrapper-sm">
+                <h3 class="m-b-xs m-t-none"><b>Getting Started:</b> Acing your case interviews</h3>
+              </div>
+              <div class="hbox">
+                <aside>
+                  <div class="wrapper-sm">
+                    <div class="col-sm-12">
+                      <p>Maybe the most nebulous, exciting and unique element of the process, case interviews are the epitome of consulting interviews. Whether you come from a business background or not, you have probably never done a case interview, so this portion of the <em>Prepp’d</em> guide will help you navigate from start to finish.</br></br></p>
+                    </div>
+
+                  <div class="col-sm-12">
+                    <section class="panel panel-default wizard">
+                      <div class="clearfix wizard-steps">
+                        <ul class="steps">
+                          <li data-target="#step1" class="active"><span class="badge badge-info">1</span>Overview</li>
+                          <li data-target="#step2"><span class="badge">2</span>Opening</li>
+                          <li data-target="#step3"><span class="badge">3</span>Structuring</li>
+                          <li data-target="#step4"><span class="badge">4</span>Quant work</li>
+                          <li data-target="#step5"><span class="badge">5</span>Qual work</li>
+                          <li data-target="#step6"><span class="badge">6</span>Exhibits</li>
+                          <li data-target="#step7"><span class="badge">7</span>Conclusions</li>
+                          <li data-target="#step8"><span class="badge">8</span>Evaluation</li>
+                        </ul>
+
+                        <div class="actions">
+                          <button type="button" class="btn btn-default btn-xs btn-prev" disabled="disabled">Prev</button>
+                          <button type="button" class="btn btn-default btn-xs btn-next" data-last="Finish">Next</button>
+                        </div>
+                      </div>
+                      <div class="step-content">
+                        <div class="step-pane active" id="step1">
+                          <p>Case interviews, in short, are a portion of the interview often around 30 minutes in length, in which you will work with your interviewer to analyze and solve different types of problems. Oftentimes, these cases are of a business nature, although this can vary across firms and interview rounds. Moreover, two styles of case delivery exist (interviewer led and interviewee led), further expanding the scope of what you can expect come interview day. All of that said, it is important to remember: Case interviews are designed and structured in such a way as to mimic the work you will do as a consultant in the industry, as best as can be done in a 30 minute exercise, and just as is true in the job, there will never be a single “right way” or “right approach.” In fact, case interviews are designed to suss out your intrinsic abilities as a prospective consultant, not your business knowledge or ability to memorize and apply standard approaches. So let’s dive in.</br></br></p>
+                            <h4>The two styles of cases</h4>
+                            <p>There are two styles of cases you can expect to get in your interviews – not in the content, but in the process and structure. Specifically, there are <em>interviewer </em>led cases and <em>interviewee </em>led cases. Although there will be a “back-and-forth” dynamic in both styles, the way in which you approach and work through these two styles is quite different.</br></p>
+                            <b>Interviewer led cases</b>
+                            <p><i>Interviewer led cases, as the name implies, are directed by the interviewer. Notably, the interviewer will give you the general case context and then have you work on specific problems, often disregarding the natural flow of the case. Candidates often describe this as feeling more like question and answer format, with the interviewer asking one question after another, without necessarily directly linking from one to the next. One benefit of this style is that your answers for each question won’t hinder the direction of the rest of the case, as compared to an interviewee led case in which your answer can shape the rest of the case significantly. On the flipside, interviewer led cases often require higher creativity, intuition and intellect to do an exceptional job.</i></p>
+                            <b>Interviewee led cases</b>
+                            <p><i>On the other hand, interviewee led cases are directed by you. Generally, the interviewer will open in a similar way with the general case context, after which you will provide an opening structure to frame your response. Then it will be your responsibility to lead the direction of the interview, by asking for data or asking clarifying questions, drawing conclusions from what you find, and working to refine your answer until you feel comfortable providing a concluding recommendation.</i></br></p>
+                            <p>One important note: The intrinsics required for both types of cases are quite similar, so, although you may feel or hear that these two styles are different, the main factor for your success will be whether you can successfully structure and work through problems effectively. As such, although it is good to practice both types of cases, being able to work through each component of the case well will give you basically everything you need to ace your cases – the rest will come down to trying each a few times to get the hang of them.</br></br></p>
+                            <h4>The flow and components of a case</h4>
+                            <p>
+                              In general, cases have four stages. The following modules on this page will dive into what to expect in each one, as well as how to go about working through each. In this section, we will just introduce the four basic components and what they mean for you:
+                              <ul>
+                                <li><b>Case opening:</b> Every case will begin with some kind of case prompt. Oftentimes this will be 30-90 seconds long, and your interviewer will give you general context about the situation you will be working through with them. Once they complete reading you
+                                the case prompt, you will have the opportunity to ask clarifying questions. In general it is best to keep questions to a minimum at this point unless there is something you misunderstood, or need to know critically. If you didn't catch something they said, or
+                                didn't understand, though, now is the time to ask.</li>
+                                <li><b>Case structuring:</b> After they have given you the case prompt, whether it is an interviewer led case or an interviewee led case, the first step will be to come up with a structure with which you feel you can disect the problem into meaningful chunks.
+                                This step is where frameworks, issue trees, and the like come into play for those of you who have come across these concepts. In short, your main goal is to create some kind of framework that will enable you to address the most relevant aspects of the
+                                situation at hand, and eventually, use the information pertaining to each oen to develop recommendations.</li>
+                                <li><b>Problem solving and analysis:</b> After you talk through your case structure, you will find yourself in the 'meat' of the case. In an interviewer led case, your interviewer will likely decide where the case should go next. In an interviewee led case,
+                                you will have to ask probing questions to get any further information you feel may be relevant, but, you will do so using your structure, starting with the items you feel will be most important to figure out and going down the list. As you move through this,
+                                whether by your own volition or your interviewer's, you will be presented with various pieces of information that you will have to work through. These may be quantitative or qualitative, and may include exhibits to provide you with relevant information.
+                                As you work through this, it will be important for you to keep in mind what you are working toward: an answer to the case you are trying to solve. Anything else can be more or less disregarded.</li>
+                                <li><b>Conclusions and recommendations:</b> Last but not least, you will likely be asked to conclude the case by providing a recommendation. Although later content in this section will discuss how to do so most effectively, this is the part of the case where
+                                you will take everything you've done, summarize it into a set of relevant recommendations, and likely also risks or other considerations, and present it back to your interviewer - the culmination of all you have done.</li>
+                              </ul>
+                              </br>
+                              <img src="{% static 'images/Case-flow.jpg' %}" style="width: 50%; height: 50%"></br></br>
+                            </p>
+                            <h4>What we 'wish we knew'</h4>
+                            <ul>
+                              <li>Don’t be afraid to ask for time for more difficult or involved questions like the structuring components. If your interviewer wants you to dive in, and you won’t be docked marks for asking (although you could be for having a fragmented or incomplete response</li>
+                              <li>You only get credit for what you say out loud, so vocalize your thoughts and assumptions, within reason. Remember: You may know how smart you are, as may your case buddies, but your interviewers aren’t mind readers and having just met you, the burden will be on you to show them how you think different types of problems, as well as how and why you work through them the way you do</li>
+                              <li>The best interviews are ones where it doesn’t feel one-directional: Your interviewer wants to feel included in your process, so think of the interview more as a problem-solving session than a verbal exam and you will be better off for it</li>
+                              <li>Cases can go in many directions. There are countless cases we’ve given or been given where two candidates with the same interview will say entirely different answers and still receive offers</li>
+                              <li>It is OK to get stuck; and it is OK to make mistakes. People often hear that you have to do the case perfectly from start to finish. The problem is, perfection is subjective and impossible, especially in the context of a case interview. If you get stuck, make sure to explain what you’re thinking, why you’re thinking that, and where the gap is for you. If you make a mistake, interviewers also may ask you similar questions to allow you to redeem yourself whether you realize it or not. So, regardless of what happens, stay calm and collected, do what you can, remember that your interviewer is there to help you succeed and wants you to, and the rest will work itself out!</li>
+                            </ul>
+                          </div>
+
+                        <div class="step-pane" id="step2">
+                          <p></br>
+                            <img src="{% static 'images/Case-opening-page.jpg' %}" style="width: 30%; height: 30%"></br></br>
+                          </p>
+                          <h4 style="color:red">TO BE WRITTEN</h4>
+                        </div>
+                        <div class="step-pane" id="step3">
+                          <p>xxyyzz</br></p>
+                          <h4 style="color:red">TO BE WRITTEN</h4>
+                        </div>
+                        <div class="step-pane" id="step4">
+                          <p>In this portion of the case, you will be asked to work through a question of a more quantiative nature. This will often take one of
+                          two formats: </br></p>
+                          <h4 style="color:red">TO BE WRITTEN</h4>
+                        </div>
+                        <div class="step-pane" id="step5">
+                        <p> In this portion of the interview, they will ask you a question of a more qualitative nature. These questions are predominantly one
+                          of two formats: analysis of a qualitative exhibit, or ideation and brainstorming around a given topic.</br></p>
+                        <h4>Ideation questions</h4>
+                        <p>Ideation questions are used to evaluate your ability to think conceptually and creatively; although they will not have a quantitative
+                          nature to them, do not underestimate the importance of this type of question: They are equally important as the other parts of the case
+                          and may come more naturally but are important to be ready for. Typically, ideation components will ask you to brainstorm a list of
+                          items such as potential reasons for an observed outcome (e.g., why could their market share be declining) or a way through which
+                          you could go about conducting an analysis you imply could be useful.</br></br>Like other elements of the case, the best way to prepare
+                          is to practice doing questions of this nature (which is why we have provided you the <b>Ideation</b> case module). Although oftentimes
+                          these questions require the context of the case to be able to answer properly, some abstracted examples of questions  we have seen used
+                          in interviews include:
+                          <ul>
+                            <li>Regulatory changes in the country will restrict your client from selling their product (alcohol) in grocery stores, and instead,
+                            only in state-controlled alcohol stores. How would you analyze the implications of this change?</li>
+                            <li>The client (a shoe retailer) projects that their revenue growth will shrink from 25% per year to 10% per year over the coming year,
+                            and may be at risk of further compression. What would you suggest they condsider to bolster revenue growth again, rapidly?</li>
+                            <li>Your client (a publicly-funded national hospital network) has been asked by the government to bring in physiotherapy and
+                            chiropractic services to all hospital locations in the next 5 years. They are considering either buying local, independent medical
+                            practices, or building the capability themselves in-house. What would be the major pros and cons of each option?</li>
+                            <li>Pressure from Netflix and other forms of entertainment are significantly hindering your client's (a TV network) ability to
+                            make money from selling advertising, as viewership declines. What should they consider to combat this downward pressure on their
+                            revenues?</li>
+                          </ul>
+                        </p>
+                        <h4>Qualitative exhibits</h4>
+                        <p>Qualitative exhibits are also used to evaluate your ability to think conceptually and creatively, and may either be given to you
+                           with a specific question to answer (interviewer led), or given to you once you have asked for relevant information (interviewee led)
+                           from which is will be on you to deduce what you want from it. These exhibits will vary more in nature than quantitative ones, as they
+                           can be crafted to respresent anything the case-writer desires, and in any form they see fit. With that, these exhibits will often draw
+                           more on your intuition than logic and reasoning.</br></br>Similar to ideation questions, you will need to deduce or hypothesize some
+                           conclusions from the exhibit you are presented. Again, as a mechanism for you to understand what exhibits like this will require,
+                           we are including a representative shortlist from exhibit questions we have seen used in interviewer led interviews:
+                           <ul>
+                             <li>Based on this exhibit of consumer perceptions for each of our products on price, performance and durability, what hypotheses
+                             do you have about how our client should change their product portfolio to capture more market share?</li>
+                             <li>What can you conclude from the exhibit with respect to whether our client is well-positioned to expand into grocery stores?</li>
+                             <li>What hypotheses do you have about how our client's B2B customers perceive their offering relative to competitors?</li>
+                           </ul>
+                         </p>
+                        <h4>What we 'wish we knew'</h4>
+                        <ul>
+                          <li>Always ask to take time to structure your thoughts. It’s much better to spend 30 seconds down your top ~3-5 ideas than to sacrifice
+                          depth of thought, structure, and clarity, which often happens when candidates rush and list things off on the fly. If for some reason
+                          your interviewer decides they want you to brainstorm live, they will just say 'no' or tell you this, and will then factor that into their
+                          judgement of your answer. However, generally speaking they will let you have the time you need (within reason)</li>
+                          <li>When possible, lead with your best answers or ideas. In fact, if there are clear forerunners in your mind, tell your interviewers you
+                            think this, and why, as it will bolster their impression of how you are thinking about the problem so long as your logic is sound</li>
+                          <li>Add colour to your answers by thinking creatively, explaining the rational and logic you are using, and giving real life parallels.
+                            Remember: They are largely evaluating your ability to think creatively and deeply in this stage of the case. By drawing parallels to real-life
+                            as discussed above, it will show that you are thinking about the problem as more than a tick-the-box interview exercise</li>
+                          <li>Don’t be thrown off if they ask “is there anything else?” or ask probing questions into your ideas (e.g. what piece of analysis would you
+                            do to get that information?, what are some of the potential issues with that idea?, what do you think that idea would do to help solve the
+                            problem?) They use such questions to test your logic and dig deeper into your thought process</li>
+                        </ul>
+                        </div>
+                        <div class="step-pane" id="step6">
+                          <p>Although it isn't a type of question per se, often, reading exhibits are a helpful thing to get comfortable doing,
+                            especially if you haven't spent time doing so in a job to date. Exhibits can appear in different forms throughout
+                          the case process. You may be faced with an exhibit in a qualitative question and/or a quantitative question, or it
+                          may be a totally separate component of the case all together for one of two reasons: 1) To give you general information
+                          you may use for context or recommendation development implicitly; or 2) To evaluate your ability to read and interpret
+                          exhibits as a separate question. Either way, it is highly likely you will be shown at least one exhibit per case, and
+                          it is your job to interpret the information presented, synthesize it, and interpret / incorporate relevant conclusions.</br></p>
+                          <h4>Common types of exhibits</h4>
+                          <p>There are a number of common exhibits. One often underutilized consideration is that they 90-100% of the exhibits you see will
+                            be created in either Excel or Think-Cell. If you are unfamiliar with either, both are very common tools in consulting for analysis
+                            and insight generation. As such, most exhibits will be created from standard outputs as such. A full list of ThinkCell charting
+                            functionality can conveniently <u><a href="https://www.think-cell.com/en/product/features.shtml">be found here</a></u>. Do take the time
+                            to read up on the charts that are unfamiliar to you.</br> In terms of frequency of seeing these in interviews, a rough estimate would
+                            be as follows:</p>
+                            <ul>
+                              <li><b>Most common:</b> Stacked column / bar, waterfall, mekko, line</li>
+                              <li><b>Relatively common:</b> Pie, scatter, bubble</li>
+                              <li><b>Somewhat common:</b> Area 100%, clustered, gantt</li>
+                              <li><b>Relatively uncommon:</b> Area, 100%, butterfly</li>
+                            </ul>
+                          <h4>What we 'wish we knew'</h4>
+                          <ul>
+                            <li>As previously recommended, don't be afraid to ask for time to review the exhibit. You will likely come up with immediate
+                              conclusions within 10-20 seconds, however, these are <em>first-order</em> insights, and though valuable, they often of lesser
+                              interest. More often than not, there are usually deeper insights you can draw (you should strive for second- and third-order
+                              thinking in order to really excel in this component. This will only be possible if you spend an extra 20-30 seconds digesting
+                              the information</li>
+                            <li>When talking through your insights, begin by briefly explaining your understanding of the chart (what it represents and what
+                              the axes are). This not only ensures you are understanding the graph correctly, but it allows you to solidify your thoughts and
+                              messaging before answering! Following this, make sure to talk through your conclusions in a structured and logical way - if it
+                              feels to your interviewer like you're making things up as you go, or it is a hard-to-follow laundry list of ideas, you'll be
+                              disadvantaged in your performance here</li>
+                            <li>Review ThinkCell and Excel as resourcse here. You may be faced with creative exhibits you haven’t seen before, but more often
+                              than not, case interview exhibits are made on one of these two softwares. If you familiarize yourself with the graph options on
+                              each, you will be much more prepared than most other candidates and have a less strenuous time reading each chart</li>
+                            <li>Always ask if you are allowed to mark up the paper before you do</li>
+                            <li>For how to respond to the actual question (qualitative or quantitative), see above sections as it will not vary too much from
+                              a regular qual/quant approach</li>
+                          </ul>
+                        </div>
+                        <div class="step-pane" id="step7">
+                          <p>xxyyzz</br></p>
+                          <h4 style="color:red">TO BE WRITTEN</h4>
+                        </div>
+                        <div class="step-pane" id="step8">
+                          <p>xxyyzz</br></p>
+                          <h4 style="color:red">TO BE WRITTEN</h4>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                  </aside>
+                </div>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
+
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <!-- Load header and side nav bars -->
+    <script>
+      $(function(){
+        $('#header').load('header')
+      });
+    </script>
+    <script>
+    $(function(){
+      $('#nav').load('nav')
+    });
+    </script>
+
+    <!-- Bootstrap -->
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <!-- App -->
+    <script src="{% static 'js/app.js' %}"></script>
+    <script src="{% static 'js/slimscroll/jquery.slimscroll.min.js' %}"></script>
+    <script src="{% static 'js/charts/easypiechart/jquery.easy-pie-chart.js' %}"></script>
+    <script src="{% static 'js/charts/sparkline/jquery.sparkline.min.js' %}"></script>
+    <script src="{% static 'js/charts/flot/jquery.flot.min.js' %}"></script>
+    <script src="{% static 'js/charts/flot/jquery.flot.tooltip.min.js' %}"></script>
+    <script src="{% static 'js/charts/flot/jquery.flot.resize.js' %}"></script>
+    <script src="{% static 'js/charts/flot/jquery.flot.grow.js' %}"></script>
+    <script src="{% static 'js/charts/flot/demo.js' %}"></script>
+    <script src="{% static 'js/calendar/bootstrap_calendar.js' %}"></script>
+    <script src="{% static 'js/calendar/demo.js' %}"></script>
+    <script src="{% static 'js/sortable/jquery.sortable.js' %}"></script>
+    <script src="{% static 'js/jvectormap/jquery-jvectormap-1.2.2.min.js' %}"></script>
+    <script src="{% static 'js/jvectormap/jquery-jvectormap-world-mill-en.js' %}"></script>
+    <script src="{% static 'js/jvectormap/demo.js' %}"></script>
+    <script src="{% static 'js/fuelux/fuelux.js' %}"></script>
+    <script src="{% static 'js/app.plugin.js' %}"></script>
+
+  </body>
+  </html>
