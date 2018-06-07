@@ -4,6 +4,7 @@ from __future__ import unicode_literals
 from django.http import HttpResponse
 from django.shortcuts import render, render_to_response
 from django.template import RequestContext
+from app.models import BehaviouralQuestion
 
 import random
 
@@ -93,7 +94,11 @@ def view_story_planning_page(request):
     return render(request, 'behaviourals/story-planning.html', {})
 
 def view_behavioural_practice_page(request):
-    return render(request, 'behaviourals/behavioural-practice.html', {})
+    question = BehaviouralQuestion.objects.order_by("?").first()
+
+    context = {'question':question}
+
+    return render(request, 'behaviourals/behavioural-practice.html', context)
 
 def view_interview_me_page(request):
     return render(request, 'interview-me.html', {})
